@@ -1,0 +1,10 @@
+{
+	"title"		:	"[TFA][AT]INS2 Shared Parts Entities",
+	"type"		:	"tool",
+	"tags"		:	[ "roleplay", "realism" ],
+	"ignore"	:
+	[
+		"*.md",
+		"*git*"
+	]
+}
