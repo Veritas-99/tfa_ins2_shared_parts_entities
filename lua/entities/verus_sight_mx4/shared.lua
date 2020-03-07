@@ -2,6 +2,8 @@ ENT.Type = "anim"
 ENT.Base = "base_gmodentity"
 ENT.PrintName = "MX4 scope (8x)"
 ENT.Spawnable = true
+ENT.RenderGroup = RENDERGROUP_BOTH
+ENT.Category = "[TFA][AT] INS2 Shared Parts"
 ENT.Attachment = "ins2_si_mx4"
 
 function ENT:compatible(wep)

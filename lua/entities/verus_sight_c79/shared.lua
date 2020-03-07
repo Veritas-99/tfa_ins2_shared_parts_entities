@@ -2,6 +2,8 @@ ENT.Type = "anim"
 ENT.Base = "base_gmodentity"
 ENT.PrintName = "C79 sight (3.4x)"
 ENT.Spawnable = true
+ENT.RenderGroup = RENDERGROUP_BOTH
+ENT.Category = "[TFA][AT] INS2 Shared Parts"
 ENT.Attachment = "ins2_si_c79"
 
 function ENT:compatible(wep)

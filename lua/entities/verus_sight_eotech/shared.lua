@@ -2,6 +2,8 @@ ENT.Type = "anim"
 ENT.Base = "base_gmodentity"
 ENT.PrintName = "EOTech sight"
 ENT.Spawnable = true
+ENT.RenderGroup = RENDERGROUP_BOTH
+ENT.Category = "[TFA][AT] INS2 Shared Parts"
 ENT.Attachment = "ins2_si_eotech"
 
 function ENT:compatible(wep)
