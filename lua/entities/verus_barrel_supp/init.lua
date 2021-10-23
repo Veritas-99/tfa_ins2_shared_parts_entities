@@ -25,8 +25,23 @@ function ENT:Use(actor, caller, useType, value)
     local wep = actor:GetActiveWeapon()
 
     if self:compatible(wep) then
-        PrintTable(wep.AttachmentCache)
-        wep:Attach(self.Attachment)
+        id = 0
+        cat = 0
+        for k,v in pairs(wep.Attachments) do
+            for k2,v2 in pairs(v.atts) do
+                if self.Attachment == v2 then
+                    id = k2
+                    cat = k
+                    break
+                end
+            end
+            if cat ~= 0 then
+                break
+            end
+        end
+
+        wep:SetTFAAttachment(cat, id, actor)
+        wep:CallOnClient("Attach", self.Attachment)
         self:EmitSound("npc/combine_soldier/gear3.wav", 75)
         self:Remove()
     end

@@ -28,6 +28,7 @@ function ENT:Use(actor, caller, useType, value)
         for k, v in pairs(wep.AttachmentCache) do
             if v ~= false then
                 wep:Detach(k)
+                wep:CallOnClient("Detach", k)
             end
         end
 
